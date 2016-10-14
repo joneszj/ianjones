@@ -1,0 +1,63 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+    font-family: 'Lato' , sans-serif;
+    font-weight: 400;
+    font-size: 1.3vmin;
+    -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFB347;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  display: inline-block;
+  width: 49%;
+}
+
+.right {
+  display: inline-block;
+  width: 50%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.third {
+  display: inline-block;
+  width: 20%;
+  margin-top: 5vmin;
+  margin-left: 5vmin;
+  margin-right: 5vmin;
+  margin-bottom: 5vmin;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}

@@ -1,0 +1,38 @@
+<style>
+    .praise {
+        height: 15vmin;
+        background-color: #f0f0f0;
+    }
+
+    .praise-note {
+        color: #000;
+        padding: 5vmin;
+        
+    }
+</style>
+<div class="praise center">
+    <p class="margin-zero praise-note" id="ctaHeading">praises here</p>
+</div>
+
+<script>
+    var CTATitle = [
+        "Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu. - Author",
+        "Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglegentur, per malis maiestatis ex. Ipsum quando noluisse id qui. In erat rebum pro. Sed ei tota tractatos. Vel autem iusto an.. - Author",
+        "Eu pri magna errem sententiae, his ne fugit legendos gloriatur. Definiebas definitionem vis ea, ut qui facer omnes aperiri, detracto consulatu contentiones ea duo. An vim antiopam constituto elaboraret. Te scripta cotidieque pro, alii sint et cum, id liber prodesset his. - Author",
+        "the other site looks sooooo much better.... - Author"
+        ];
+    var i = 0;
+    function updateCTA() {
+        $("#ctaHeading").fadeOut(3000,function() {
+            i++;
+            if (i > CTATitle.length) { i = 0; }
+            $("#ctaHeading").text(CTATitle[i]);
+            $("#ctaHeading").fadeIn(3000);
+        })
+    }
+
+    $(document).ready(function(){
+        $("#ctaHeading").text(CTATitle[i]);
+        setInterval(updateCTA,3000);
+    });
+</script>

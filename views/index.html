@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title>ian joseph jones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/responsiveNav.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body ng-controller="mainController">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--<div ng-include="'/views/navigation.html'"></div>-->
+    <div ng-view></div>
+    <div ng-include="'/views/footer.html'"></div>
+    <script src="/javascripts/jquery-1.12.0.min.js"></script>
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/javascripts/angular-route.min.js"></script>
+    <script src="/javascripts/angular-animate.min.js"></script>
+    <script src="/javascripts/angular-app.js"></script>
+    <script src="/javascripts/responsiveNav.js"></script>
+    <script src="/javascripts/main.js"></script>
+</body>
+
+</html>
